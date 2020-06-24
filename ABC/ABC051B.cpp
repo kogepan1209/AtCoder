@@ -6,18 +6,14 @@ int main() {
     cin >> K >> S;
 
     int sum = 0;
-    for(int i=K; i>=0; i--){
-        for(int j=K; j>=0; j--){
-            for(int k=K; k>=0; k--){
-                if((i+j+k)==S){
-                    sum++;
-                    break;
-                }
-            }
+    for(int X=K; X>=0; X--){
+        for(int Y=K; Y>=0; Y--){
+            int Z = S - X - Y;
+            if(0 <= Z and Z <= K) sum++;
         }
     }
 
     cout << sum << endl;
-    
+
     return 0;
 }
