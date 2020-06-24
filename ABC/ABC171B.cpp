@@ -13,7 +13,6 @@ int main(){
     }
 
     sort(p.rbegin(), p.rend());
-
     int sum = 0;
     for(int i=0; i<K; i++){
         sum += p.back();
