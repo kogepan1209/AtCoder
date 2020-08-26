@@ -2,21 +2,16 @@
 using namespace std;
  
 int main(){
-    long long N;
-    cin >> N;
+    string a;
+    cin >> a;
 
     int sum = 0;
-    while((N/10)!=0){
-        sum += N % 10;
-        N = N / 10;
+    for(int i=0; i<a.length(); i++){
+        sum += (a[i] - '0');
     }
-    sum += (N%9);
 
-    if((sum%9)==0){
-        cout << "Yes" << endl;
-    }else{
-        cout << "No" << endl;
-    }
+    if(sum%9 == 0) cout << "Yes" << endl;
+    else cout << "No" << endl;
    
     return 0;
 }
