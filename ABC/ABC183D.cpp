@@ -2,46 +2,57 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+
+const int NX = 2e5 + 5;
+long long a[NX];
+int N, W;
  
-int main(){
-    int n, w;
-    cin >> n >> w;
+int main() {
+	cin >> N >> W;
+	for(int i = 0; i < N; ++i) {
+		int s, t, p;
+		cin >> s >> t >> p;
+		a[s] += p;
+		a[t] -= p;
+	}
+	
+	for(int i = 1; i < NX; ++i) {
+		a[i] += a[i - 1];
+	}
+	
+	int f = 0;
+	for(int i = 0; i < NX; ++i) {
+		f |= (a[i] > W);
+	}
+	
+	cout << (f ? "No": "Yes"); 
+	return 0;
+}
+#include <iostream>
+using namespace std;
 
-    int s[n], t[n], p[n];
-    for(int i=0; i<n; i++){
-        cin >> s[i] >> t[i] >> p[i];
-    }
+const int NX = 2e5 + 5;
+long long a[NX];
+int N, W;
 
-    for(int i=0; i<n; i++){
-        int use = 0;
-        for(int j=0; j<n; j++){
-            if( s[j]<=s[i] && s[i]<t[j]){
-                use += p[j];
-                if( use > w){
-                    cout << "No" << endl;
-                    return 0;
-                }
-            }
-        }
-    }
-
-    /**
-    int finish_t = *max_element(t, t+n);
-    for(int i=0; i<finish_t; i++){
-        int use_w = 0;
-        for(int j=0; j<n; j++){
-            if( s[j]<=i && i<t[j]){
-                use_w += p[j];
-                if( use_w > w){
-                    cout << "No" << endl;
-                    return 0;
-                }
-            }
-        }
-    }
-    **/
-   
-    cout << "Yes" << endl;
-    
-    return 0;
+int main() {
+	cin >> N >> W;
+	for(int i = 0; i < N; ++i) {
+		int s, t, p;
+		cin >> s >> t >> p;
+		a[s] += p;
+		a[t] -= p;
+	}
+	
+	for(int i = 1; i < NX; ++i) {
+		a[i] += a[i - 1];
+	}
+	
+	int f = 0;
+	for(int i = 0; i < NX; ++i) {
+		f |= (a[i] > W);
+	}
+	
+	cout << (f ? "No": "Yes"); 
+	return 0;
 }
