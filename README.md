@@ -1,7 +1,7 @@
 # AtCoder
 使用言語：C++
 
-## Copile
+## Compile
 ```
 g++ ***
 ./a.out
