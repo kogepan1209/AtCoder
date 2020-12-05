@@ -2,23 +2,27 @@
 
 #include <bits/stdc++.h>
 using namespace std;
- 
-int main(){
+
+int main()
+{
     int N;
     cin >> N;
-    
-    int A[N];
-    for(int i=0; i<N; i++) cin >> A[i];
 
-    int sum = 0;
-    for(int i=1; i<N; i++){
-        if(A[i]<A[i-1]){
-            sum += A[i-1] - A[i];
-            A[i] = A[i-1];
+    vector<long long> a(N);
+    for (int i = 0; i < N; i++)
+        cin >> a[i];
+
+    long long ans = 0;
+    for (int i = 1; i < N; i++)
+    {
+        if (a[i] < a[i - 1])
+        {
+            ans += a[i - 1] - a[i];
+            a[i] = a[i - 1];
         }
     }
 
-    cout << sum << endl;
+    cout << ans << endl;
 
     return 0;
 }
