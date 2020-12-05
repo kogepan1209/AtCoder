@@ -3,15 +3,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     string S;
     cin >> S;
 
-    if(S == "ABC"){
+    if (S == "ABC")
+    {
         cout << "ARC" << endl;
-    }else{
+    }
+    else
+    {
         cout << "ABC" << endl;
     }
-    
+
     return 0;
 }
