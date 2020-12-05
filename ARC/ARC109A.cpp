@@ -13,19 +13,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     //cout << fixed << setprecision(15);
 
     int a, b, x, y;
     cin >> a >> b >> x >> y;
 
-    if( a == b){
+    if (a == b)
+    {
         cout << x << endl;
-    }else if( a > b ){
-        cout << min( 2*(a-b)*x-x , (a-b-1)*y+x ) << endl;
-    }else{
-        cout << min( (b-a)*2*x+x , (b-a)*y+x ) << endl;
     }
-    
+    else if (a > b)
+    {
+        cout << min(2 * (a - b) * x - x, (a - b - 1) * y + x) << endl;
+    }
+    else
+    {
+        cout << min((b - a) * 2 * x + x, (b - a) * y + x) << endl;
+    }
+
     return 0;
 }

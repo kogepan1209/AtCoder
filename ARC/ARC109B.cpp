@@ -13,21 +13,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     //cout << fixed << setprecision(15);
     long long n;
     cin >> n;
 
-    if( n==1 ){
+    if (n == 1)
+    {
         cout << "1" << endl;
         return 0;
     }
 
     long long count = 1;
     long long sum = 0;
-    while( sum <= n+1 ){
+    while (sum <= n + 1)
+    {
         sum += count;
-        count ++;
+        count++;
     }
 
     cout << n - count + 3 << endl;
