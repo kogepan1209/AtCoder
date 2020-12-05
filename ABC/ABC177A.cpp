@@ -1,5 +1,4 @@
 // ABC 177 A
-
 #include <bits/stdc++.h>
 using namespace std;
 
