@@ -1,14 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
-int main(){
+
+int main()
+{
     char s;
     cin >> s;
-    if (isupper(s)){
+    if (isupper(s))
+    {
         cout << "A" << endl;
-    }else{
+    }
+    else
+    {
         cout << "a" << endl;
     }
-    
+
     return 0;
 }
