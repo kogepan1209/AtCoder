@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << fixed << setprecision(15);
+    // cout << fixed << setprecision(15);
 
     string s, t;
     cin >> s >> t;
@@ -13,7 +13,7 @@ int main()
     int t_len = t.length();
 
     int max = 0;
-    for (int i = 0; i < (s_len - t_len); i++)
+    for (int i = 0; i < s_len - t_len + 1; i++)
     {
         int tmp = 0;
         for (int j = 0; j < t_len; j++)
