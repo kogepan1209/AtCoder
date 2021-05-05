@@ -1,4 +1,4 @@
-//ABC178 C
+// ABC178 C
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -6,28 +6,25 @@ using namespace std;
 typedef long long ll;
 const ll mod = 1000000007;
 
-ll powmod(ll x, ll y)
-{
-    ll res = 1;
-    for (ll i = 0; i < y; i++)
-    {
-        res = res * x % mod;
-    }
+ll powmod(ll x, ll y) {
+  ll res = 1;
+  for (ll i = 0; i < y; i++) {
+    res = res * x % mod;
+  }
 
-    return res;
+  return res;
 }
 
-int main()
-{
-    //cout << fixed << setprecision(15);
+int main() {
+  // cout << fixed << setprecision(15);
 
-    ll n;
-    cin >> n;
-    ll ans = powmod(10, n) - powmod(9, n) - powmod(9, n) + powmod(8, n);
-    ans %= mod;
-    ans = (ans + mod) % mod;
+  ll n;
+  cin >> n;
+  ll ans = powmod(10, n) - powmod(9, n) - powmod(9, n) + powmod(8, n);
+  ans %= mod;
+  ans = (ans + mod) % mod;
 
-    cout << ans << endl;
+  cout << ans << endl;
 
-    return 0;
+  return 0;
 }

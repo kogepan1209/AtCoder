@@ -1,21 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main()
-{
+int main() {
   int n;
   cin >> n;
   n = n % 100;
   n = n % 10;
-  if (n == 3)
-  {
+  if (n == 3) {
     cout << "bon" << endl;
-  }
-  else if (n == 0 || n == 1 || n == 6 || n == 8)
-  {
+  } else if (n == 0 || n == 1 || n == 6 || n == 8) {
     cout << "pon" << endl;
-  }
-  else
-  {
+  } else {
     cout << "hon" << endl;
   }
 

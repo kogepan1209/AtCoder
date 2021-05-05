@@ -2,17 +2,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    //cout << fixed << setprecision(15);
+int main() {
+  // cout << fixed << setprecision(15);
 
-    double D, T, S;
-    cin >> D >> T >> S;
+  double D, T, S;
+  cin >> D >> T >> S;
 
-    if (T >= D / S)
-        cout << "Yes" << endl;
-    else
-        cout << "No" << endl;
+  if (T >= D / S)
+    cout << "Yes" << endl;
+  else
+    cout << "No" << endl;
 
-    return 0;
+  return 0;
 }

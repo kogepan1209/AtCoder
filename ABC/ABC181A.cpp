@@ -1,17 +1,16 @@
-//ABC181 A
+// ABC181 A
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int n;
-    cin >> n;
+int main() {
+  int n;
+  cin >> n;
 
-    if ((n % 2) == 0)
-        cout << "White" << endl;
-    else
-        cout << "Black" << endl;
+  if ((n % 2) == 0)
+    cout << "White" << endl;
+  else
+    cout << "Black" << endl;
 
-    return 0;
+  return 0;
 }

@@ -1,21 +1,17 @@
-//ABC166-A
+// ABC166-A
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    string S;
-    cin >> S;
+int main() {
+  string S;
+  cin >> S;
 
-    if (S == "ABC")
-    {
-        cout << "ARC" << endl;
-    }
-    else
-    {
-        cout << "ABC" << endl;
-    }
+  if (S == "ABC") {
+    cout << "ARC" << endl;
+  } else {
+    cout << "ABC" << endl;
+  }
 
-    return 0;
+  return 0;
 }
