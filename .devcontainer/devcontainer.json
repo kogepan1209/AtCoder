@@ -1,0 +1,27 @@
+{
+	"name": "Existing Docker Compose (Extend)",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "gcc",
+	"workspaceFolder": "/work",
+	"settings": {
+		"C_Cpp.clang_format_fallbackStyle": "Google",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"[cpp]": {
+			"editor.wordBasedSuggestions": false,
+			"editor.suggest.insertMode": "replace",
+			"editor.semanticHighlighting.enabled": true
+		},
+	},
+	"extensions": [
+		"ms-vscode.cpptools",
+		"editorconfig.editorconfig"
+	]
+	// "forwardPorts": [],
+	// "runServices": [],
+	// "shutdownAction": "none",
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	// "remoteUser": "vscode"
+}

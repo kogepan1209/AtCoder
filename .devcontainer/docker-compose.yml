@@ -1,0 +1,15 @@
+version: "3"
+services:
+  gcc:
+    # コンテナ名を指定して docker exec が楽
+    container_name: gcc-container
+
+    # Dockerfile の場所
+    build: .
+
+    # ホストOSのボリュームをコンテナOSとマウント
+    volumes:
+      - ../:/work
+
+    # docker-compose up したときにコンテナが終了しないよう永続化
+    tty: true
